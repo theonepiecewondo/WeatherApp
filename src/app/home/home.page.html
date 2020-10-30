@@ -1,9 +1,4 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -14,7 +9,13 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="bg"></div>
+    <p class="name">{{ location.name }}</p>
+    <p class="conditionText">{{ condition.text }}</p>
+    <p class="temp">{{ current.temp_f }}°</p>
+    <ion-img [src]="condition.icon" class="icon"></ion-img>
+    <p class="normalText">Wind Speed: {{ current.wind_mph }}</p>
+    <p class="normalText">Wind Direction: {{current.wind_dir}}</p>
+    <p class="normalText">Feels Like: {{current.feelslike_f}}°</p>
   </div>
 </ion-content>

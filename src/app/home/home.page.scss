@@ -6,6 +6,19 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  color: #fff;
+}
+.bg{
+  position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
 }
 
 #container strong {
@@ -13,15 +26,35 @@
   line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
 #container a {
   text-decoration: none;
+}
+
+ion-content{
+  --background: #fff url('../../assets/sunny.bmp') no-repeat center center / cover;
+}
+
+.name{
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.conditionText{
+  font-size: 20px;
+  margin: 0;
+}
+.temp{
+  font-size: 70px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.icon{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
+.normalText{
+  font-size: 20px;
 }
